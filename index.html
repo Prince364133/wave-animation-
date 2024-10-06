@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Orbit animation driven by sine / cosine</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="canvas-wrapper centered">
+	<canvas class="sine centered"></canvas>
+	<canvas class="cosine centered"></canvas>
+	<canvas class="stage centered"></canvas>
+</div>
+
+<div>
+	<div class="col-12 centered">
+		<div class="col-6">
+			<label id="speed-label" for="speed">Speed</label>
+			<input type="range" min="0" max="120" id="speed">
+		</div>
+		<div class="col-6">
+			<button class="cross">Toggle curves</button>
+		</div>
+	</div>
+
+	<div class="col-12 centered">
+		<div class="col-6">
+			<label id="ellipse-label" for="ellipse">Ellipse</label>
+			<input type="range" min="50" max="250" id="ellipse">
+		</div>
+		<div class="col-6">
+			<button class="circle">Toggle guides</button>
+		</div>
+	</div>
+</div>
+
+<hr class="centered"/>
+
+<aside class="centered">
+	<p>A demonstration of how calculations for basic animations, eg simple horizontal and vertical movement, can be combined to create a more complex looking effect, like an orbit.</p>
+	<p>The circular nature of the orbit is a product of using <span class="sine">sine</span> and <span class="cosine">cosine</span> methods for the <span class="sine">vertical</span> and <span class="cosine">horizontal</span> animations.</p>
+	<p>See the <span class="code">update()</span> method for the very simple maths 😃</p>
+	<p>The <span class="code">draw()</span> method appars complex due to the multiple elements in this demo, but drawing the orbitting dot itself is just three lines.</p>
+</aside>
+<!-- partial -->
+  <script  src="./script.js"></script>
+  <h1>BY BRDL</h1>
+</body>
+</html>
