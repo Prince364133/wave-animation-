@@ -1,0 +1,67 @@
+html {
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+html body {
+  background: #242424;
+}
+html p {
+  text-align: left;
+}
+html hr {
+  border: 0.5px dashed dimgray;
+}
+html form {
+  margin-bottom: 10px;
+}
+html label {
+  font-size: 0.95rem;
+  padding: 0 5px 0;
+}
+html input {
+  margin-bottom: 5px;
+  width: 100%;
+}
+html button {
+  margin: 5px 0;
+  position: absolute;
+  top: -40px;
+  width: 100%;
+}
+html span.sine {
+  color: #aaf;
+}
+html span.cosine {
+  color: #afa;
+}
+html span.code {
+  font-family: Courier New, Courier, monospace;
+  font-size: 1.1rem;
+  margin-left: 6px;
+}
+
+.centered {
+  display: block;
+  margin: 0px auto;
+  width: 450px;
+}
+
+.col-6 {
+  display: inline-block;
+  padding: 0 3%;
+  position: relative;
+  width: 42%;
+}
+
+.canvas-wrapper {
+  height: 300px;
+  position: relative;
+}
+.canvas-wrapper canvas {
+  position: absolute;
+  top: 0;
+}
+.canvas-wrapper.hidden .sine,
+.canvas-wrapper.hidden .cosine {
+  display: none;
+}
